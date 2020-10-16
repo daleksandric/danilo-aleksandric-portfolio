@@ -1,0 +1,335 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+nav {
+  position: fixed;
+  right: 0;
+  z-index: 1030;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.nav-bar-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  text-align: center;
+}
+
+.nav-bar-links li {
+  padding: 10px;
+  margin-right: 40px;
+  margin-top: 15px;
+}
+
+.nav-bar-links li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+.nav-bar-links li a:hover {
+  color: #58a877;
+}
+
+.fixed-page-position {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.active-page {
+  z-index: 9999;
+}
+
+.inactive-page {
+  z-index: -9999;
+}
+
+.close-button {
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 20px;
+}
+
+.close-button ion-icon {
+  font-size: 5rem;
+}
+
+.close-button a {
+  text-decoration: none;
+  color: white;
+  font-size: 30px;
+}
+
+.close-button a:active {
+  color: #58a877;
+}
+
+.home-page {
+  position: relative;
+  background-color: #111;
+  background-position: center center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.home-content {
+  color: white;
+  height: 100%;
+  line-height: 40px;
+}
+
+.home-content h1 {
+  font-size: 7rem;
+  font-weight: 700;
+}
+
+.home-content h2 {
+  font-size: 3.5rem;
+  font-weight: 400;
+}
+
+.header-flex-parent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+}
+
+.header-text-container {
+  text-align: center;
+}
+
+.home-pagination-container {
+  position: absolute;
+  right: 0;
+  bottom: 15px;
+}
+
+.home-pagination-container li {
+  padding: 20px;
+}
+
+.home-pagination-container li a {
+  color: white;
+  font-size: 2.5rem;
+}
+
+.home-pagination-container li a:hover {
+  color: #58a877;
+}
+
+.about-me-page,
+.resume-page,
+.portfolio-page {
+  background-color: #111;
+  background-position: center center;
+  height: 100vh;
+  width: 100%;
+  color: white;
+  overflow: hidden;
+}
+
+.about-me-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 75px;
+}
+
+.about-me-header {
+  text-align: center;
+}
+
+.about-me-header p {
+  font-size: 1.5rem;
+  color: #9c9c9c;
+}
+
+.about-me-header h2 {
+  font-size: 4.5rem;
+  margin: 0;
+}
+
+.about-me-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.about-me-content address {
+  font-style: normal;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.address-row-one,
+.address-row-two,
+.address-row-three {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.address-row-one div,
+.address-row-two div,
+.address-row-three div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  line-height: 15px;
+}
+
+.address-row-one span,
+.address-row-two span,
+.address-row-three span {
+  font-size: 1.5rem;
+  margin-right: 25px;
+}
+
+.address-row-one p,
+.address-row-two p,
+.address-row-three p {
+  color: #9c9c9c;
+}
+
+.address-row-one a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #58a877;
+}
+
+.address-row-three {
+  margin-top: 25px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.address-row-three ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+  font-size: 2rem;
+}
+
+.address-row-three ul a {
+  margin-right: 35px;
+  color: white;
+}
+
+.address-row-three ul a:hover {
+  color: #58a877;
+}
+
+.address-row-three .cv-button {
+  font-size: 1.5rem;
+  padding: 10px 25px;
+  background-color: #58a877;
+  border-radius: 30px;
+}
+
+.address-row-three .cv-divider {
+  height: 1px;
+  width: 50px;
+  background-color: dimgray;
+  margin: 0 25px;
+}
+
+.about-me-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.about-me-image img {
+  width: 450px;
+}
+
+.about-me-text-block {
+  margin-left: 75px;
+}
+
+.about-me-text-block h2 {
+  font-size: 2rem;
+  font-weight: 400;
+  color: #58a877;
+}
+
+.about-me-text-block h3 {
+  font-size: 3rem;
+}
+
+.about-me-text-block p {
+  font-size: 1.5rem;
+}
+
+.about-me-text-block .about-me-main-text {
+  padding-bottom: 25px;
+  border-bottom: 1px solid #404040;
+}
+
+@media (max-width: 690px) {
+  .home-page h1 {
+    font-size: 5rem;
+  }
+  .home-page h2 {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 350px) {
+  .nav-bar-links li {
+    font-size: 0.5rem;
+    margin-right: 10px;
+    padding: 10px;
+  }
+}
